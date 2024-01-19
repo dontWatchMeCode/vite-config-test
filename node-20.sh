@@ -6,6 +6,5 @@ docker run \
     --rm \
     -w /app \
     -v "$(pwd)":/app \
-    -p 8080:8080 \
     node:20 \
     "$@"
