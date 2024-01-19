@@ -1,7 +1,14 @@
 import { LitElement, html, css } from "lit";
 import { randomNum } from "./lib/random.js";
 
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import "bootstrap/scss/bootstrap.scss";
+
+
 console.log("init");
+
+Fancybox.bind("[data-fancybox]", {});
 
 class MyElement extends LitElement {
     static get styles() {
